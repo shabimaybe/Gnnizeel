@@ -51,7 +51,7 @@ const CheckoutForm = () => {
         </button>
 
         <div>
-          Token detials:{token}
+          Here is exp_year: {token}
         </div>
 
 
