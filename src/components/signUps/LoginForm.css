@@ -1,0 +1,265 @@
+body {
+  overflow-x: hidden;
+}
+.main-div {
+  background-color: #2ed3c5;
+  width: 1514px;
+  height: 100px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+}
+
+.image-text1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 10px;
+}
+
+.image-text1 img {
+  max-width: 100px;
+  max-height: 80px;
+}
+
+.image-text1.g-1 {
+  color: #fff;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 18.911px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 5.673px;
+}
+
+.buttons {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+.button {
+  color: #fff;
+
+  text-align: center;
+  font-family: " Poppins";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: 10px;
+}
+
+.button:hover {
+  background-color: #23ada5;
+  border: 2px;
+  border-bottom: #2ed3c5;
+}
+
+/* second section */
+
+.container2 {
+
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-div {
+  width: 565px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+}
+
+.first-div h1 {
+  color: #333;
+  font-family: "Poppins", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 124.5%;
+}
+
+.first-div p {
+  color: #9d9d9d;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.first-div .button {
+  width: 196px;
+  height: 58px;
+  flex-shrink: 0;
+  background-color: #2ed3c5;
+  color: #fff;
+  font-family: " Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.second-div {
+  width: 539px;
+  height: 450px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  background-color: whitesmoke;
+  border-radius: 20px;
+  padding: 36px;
+  margin: 107px;
+}
+
+.second-div h2 {
+  color: #000;
+  font-family: " Poppins", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+}
+
+.second-div h3 {
+  color: #333;
+  font-family: " Poppins", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.second-div input {
+  width: 451px;
+  height: 58px;
+  flex-shrink: 0;
+  font-family: " Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #000;
+  border-radius: 20px;
+}
+
+.second-div p {
+  color: var(--Dark-Gray, #6a707c);
+  text-align: right;
+  font-family: " Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 15x;
+}
+
+.second-div .button {
+  width: 451px;
+  height: 58px;
+  flex-shrink: 0;
+  background-color: #2ed3c5;
+  color: #fff;
+  font-family: " Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.second-div .last-p {
+  color: #8d8d8d;
+  font-family: " Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+
+
+/* Default styles for smaller screens (e.g., mobile) */
+.container2 {
+  flex-direction: column; /* Stack elements in a column on mobile */
+  align-items: center;
+  padding: 20px;
+}
+
+.first-div {
+  width: 100%; /* Full width for the first div on mobile */
+  text-align: center;
+  margin: 20px;
+}
+
+.second-div {
+  width: 100%; /* Full width for the second div on mobile */
+  margin: 20px;
+}
+
+.second-div input {
+  width: 100%; /* Full width for input fields on mobile */
+}
+
+.second-div .button {
+  width: 100%; /* Full width for the Submit button on mobile */
+  margin-top: 20px; /* Add some spacing between the input and the button */
+}
+
+/* Media query for tablets (md) */
+
+
+/* Media query for laptops (lg) and larger screens (xl and xxl) */
+@media (min-width: 992px) {
+  .container2 {
+    flex-direction: row; /* Display elements in a row for laptops and larger screens */
+  }
+
+  .first-div {
+    width: 50%;
+    text-align: left;
+  }
+
+  .second-div {
+    width: 50%;
+    text-align: left; /* Adjust alignment for larger screens */
+    margin-left: 20px; /* Add some spacing between the two divs */
+  }
+
+  .second-div input {
+    width: 100%; /* Full width for input fields on larger screens */
+  }
+
+  .second-div .button {
+    width: 100%; /* Full width for the Submit button on larger screens */
+  }
+}
+
+

@@ -1,0 +1,177 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    
+    border-radius: 10px;
+  }
+  
+ /* Style the search bar input */
+.search-bar input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: none; /* Remove the border */
+    border-radius: 20px; /* Make it rounded */
+    box-shadow: 0 0 5px rgba(46, 211, 197, 0.7); /* Add a light blue shadow */
+    outline: none; /* Remove the input focus outline */
+  }
+  
+  .content {
+    flex: 2;
+    text-align: center;
+  }
+  
+  .button-container {
+    flex: 1;
+    text-align: right;
+  }
+  
+  button {
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: #2ED3C5;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+ 
+  /* Styles for the card container */
+.card {
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 400px; /* Adjust the max width as needed */
+    margin: 0 auto;
+  }
+  
+  /* Styles for the big image on the right */
+  .card-image {
+    flex: 1 1;
+    max-width: 132%;
+    /* object-fit: cover; */
+    height: 213px;
+
+    margin: -21px;
+    margin-left: -59px;
+    padding: -62px;
+  }
+  
+  /* Styles for the card content on the left */
+  .card-content {
+    flex: 2;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+  }
+  
+  /* Button styles */
+  
+  .update-button,
+  .disable-button {
+    background-color: #2ED3C5;
+    color: white;
+    border: none;
+    border-radius: 27px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 121.326px;
+height: 40.442px;
+  }
+  .card-button{
+   
+   color: white;
+    border: 1px solid #2ED3C5;
+    border-radius: 27px;
+    cursor: pointer;
+    width: 85px;
+    height: 26px;
+   font-size: 9px;
+   justify-content: center;
+
+  }
+
+
+  .card-buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+  
+  /* Title styles */
+  h4 {
+    color: #18171E;
+font-family: Poppins;
+font-size: 22px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+text-transform: capitalize;
+  }
+  
+  p{
+    color: #1D1E25;
+font-family: Poppins;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+  }
+  /* Time icon and text styles */
+  .time {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  #clock{
+    display: flex;
+width: 17px;
+height: 17px;
+justify-content: center;
+align-items: center;
+flex-shrink: 0;
+  }
+  
+  .time img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+  
+  /* Price styles */
+  .price {
+    font-size: 16px;
+  }
+
+  .div1{
+    display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 20px; /* Gap between cards */
+  justify-content: center; 
+  margin-top: 20px;
+  width: 70vw;
+  margin: 0 auto;
+  }
+  
+  /* Responsive styling for smaller screens */
+  @media (max-width: 768px) {
+    .card {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card-image {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+  

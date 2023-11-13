@@ -1,0 +1,101 @@
+.bg-image3 {
+  position: relative;
+  background-image: url("../../../public/bg1.svg");
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+.custom-form3 {
+  position: relative;
+  right: -620px;
+  top: 58px;
+  width: 539px;
+  height: 500px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff; /* Set the background color you desire */
+  border: 1px solid #ccc; /* Add a border if needed */
+  padding: 20px;
+  border-radius: 20px;
+}
+
+h1 {
+  color: #333;
+  font-family: Poppins;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.input3 {
+  /* Updated class name */
+  width: 451px;
+  height: 60px;
+  flex-shrink: 0;
+  border: 1px solid #ccc;
+  border-radius: 30px; /* Rounded corners */
+  margin: 10px 0;
+  padding: 10px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+.button3 {
+  /* Updated class name */
+  width: 451px;
+  height: 60px;
+  flex-shrink: 0;
+  background-color: #23ada5;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.text-1 {
+  color: black;
+  font-family: "Poppins" sans-serif;
+  color: #18171e;
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 10.107px;
+}
+
+.image-text3 {
+  position: relative;
+  left: 88px;
+  top: 71px;
+}
+
+.forget-paragraph {
+  position: relative;
+  left: 25px;
+  color: #737373;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.back-to-login {
+  color: #23ada5;
+  padding: 20px;
+}
+
+.img3 {
+  position: relative;
+  left: 24px;
+}
+

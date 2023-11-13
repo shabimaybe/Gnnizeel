@@ -1,0 +1,24 @@
+/* CSS in your Header.css file */
+.navbar-section-left {
+    flex: 1; /* Takes up one-third of the available space */
+    text-align: left;
+  }
+  
+  .navbar-section-center {
+    flex: 1; /* Takes up one-third of the available space */
+    text-align: center;
+  }
+  
+  .navbar-section-right {
+    flex: 1; /* Takes up one-third of the available space */
+    text-align: right;
+  }
+h5{
+
+    color: white;
+}  
+.deals{
+   color: white;
+   text-decoration: none;
+
+}
