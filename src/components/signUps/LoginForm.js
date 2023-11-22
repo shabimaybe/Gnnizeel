@@ -1,10 +1,13 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './LoginForm.css';
 import { Link, Navigate, useNavigate } from 'react-router-dom';
 // import axios from 'axios'; 
 import { Url } from '../../utils/Url';
 import { postApiWithoutAuth } from '../../utils/api';
 import { setToken } from '../../utils/LocalStorage';
+import GoogleLoginButton from './GoogleLoginButton';
+import FacebookLoginButton from './FacebookLoginButton';
+import {gapi} from "gapi-script";
 
 
 function LoginForm() {
@@ -40,13 +43,38 @@ function LoginForm() {
     }
   };
 
-  const handleInputChange = (e) => {
+ useEffect(()=>{
+  function start(){
+    gapi.client.init({
+      clientId:"43835889126-e9at3boi16l09v22oelj1dlpumuejqgv.apps.googleusercontent.com",
+      scope:""
+    })
+  };
+  gapi.load("client",start)
+ });
+  
+ 
+ 
+   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
       [name]: value,
     });
   };
+
+  const googleLoginSuccess = (response) => {
+    console.log(response); 
+
+  };
+
+ 
+
+  const facebookLoginSuccess = (response) => {
+    console.log(response); 
+  };
+
+
 
   return (
     <>
@@ -102,6 +130,13 @@ function LoginForm() {
             <button className="button" type="submit">Submit</button>
           </form>
           <Link to='/signup' className="last-p">Create New Account</Link>
+
+          <div className='button-log'>
+            <GoogleLoginButton onSuccess={googleLoginSuccess} />
+            <FacebookLoginButton onSuccess={facebookLoginSuccess} />
+          </div>
+
+
         </div>
       </div>
     </>
